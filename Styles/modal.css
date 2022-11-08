@@ -1,5 +1,3 @@
-
-
 .modalContainer {
     background-color: rgba(70, 35, 167, 0.356);
     position: absolute;
@@ -15,6 +13,7 @@
 }
 
 .modalBox {
+
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -26,7 +25,9 @@
     animation: modal 1300ms;
 }
 
-.modalBox span {
+.modalHeader {
+    border: 1px solid var(--blue-placeh);
+    border-bottom: none;
     background-color: var(--blue);
     height: 30px;
     display: flex;
@@ -64,10 +65,6 @@
     padding-right: 0;
 }
 
-.modalBox aside {
-    padding-right: 33px;
-}
-
 .adoteImg {
     border-radius: 7px;
 }
@@ -76,7 +73,7 @@
     margin: 13px;
 }
 
-.modalBox .btnSmallSuccess {
+.adoteModalBox  {
     position: relative;
     top: 0;
     left: 215px;
@@ -84,6 +81,82 @@
     height: 30px;
     justify-self: center;
     margin-bottom: 10px;
+}
+
+.petInfoModal{
+    display: flex;
+    padding: 0 13px;
+    min-height: 100%;
+}
+
+.imgBox{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-height: 200px;
+    gap: 13px;
+    padding-right: 0;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+.imgBox img{
+    padding: 0;
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.petInfo{
+    width: 60%;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    padding: 0 0 0 13px;
+    gap: 7px;
+}
+
+.petInfo h2{
+    padding: 0;
+}
+
+.petInfo h5{
+    color: var(--blue-namedog);
+}
+
+.petInfo p{
+    padding: 0;
+    color: var(--blue-placeh);
+    max-width: 23ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;    
+}
+
+.adoteInModal{
+    height: 30px;
+    width: 100%;
+    padding: 13px 13px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.imgBox .btnSmallAlert {
+    height: 30px;
+    width: 100%;
+    padding: 13px 13px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes modal {

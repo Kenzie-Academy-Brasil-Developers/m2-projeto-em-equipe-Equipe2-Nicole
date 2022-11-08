@@ -9,11 +9,29 @@
     bottom: 28px;
     gap: 17px;
     box-shadow: 0px 4px 30px -12px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    background: var(--blue);
+    border-radius: 8px;
+    background: #4ca055;
     animation: toastIt 4000ms ease-in forwards;
-    border: 5px solid green;
+    border: 5px solid #4ca055;
 }
+
+.div-toastRed {
+    width: 422px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    padding: 21px 32px;
+    position: fixed;
+    right: 16px;
+    bottom: 28px;
+    gap: 17px;
+    box-shadow: 0px 4px 30px -12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: #c64242;
+    animation: toastIt 4000ms ease-in forwards;
+    border: 5px solid #c64242;
+}
+
 
 @keyframes toastIt {
     0% {
