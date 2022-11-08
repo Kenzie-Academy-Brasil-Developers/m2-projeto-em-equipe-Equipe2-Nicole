@@ -1,53 +1,53 @@
-.selected{
+.selected {
     text-decoration: underline;
 }
 
-header{    
+header {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-img{
+img {
     width: 100px;
     height: 100px;
 }
 
-.btnDelete{
+.btnDelete {
     color: var(--red);
     height: 50px;
     width: 50px;
 }
 
-main{
+main {
     position: relative;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-#homeFilter{
+#homeFilter {
     gap: 30px;
-    padding: 30px 70px;
+    padding: 7px 5vw;
     margin-bottom: 40px;
     background-color: var(--blue);
-    color: var(--white);    
+    color: var(--white);
 }
 
-.filter{
+.filter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 13px;
 }
 
-#petList{
+#petList {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
     max-width: 90vw;
 }
 
-.petCard{
+.petCard {
     position: relative;
     box-shadow: 0px 0px 5px rgba(78, 32, 150, 0.25);
     border-radius: 4px;
@@ -55,16 +55,17 @@ main{
     gap: 13px;
 }
 
-.petCard span{
-    height: 100px;
-    border-radius: 4px;
-}
-.petCard span img{
+.petCard span {
     height: 100px;
     border-radius: 4px;
 }
 
-.pet{
+.petCard span img {
+    height: 100px;
+    border-radius: 4px;
+}
+
+.pet {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,16 +73,39 @@ main{
     max-height: 100px;
 }
 
-.petName{
+.petName {
     margin-top: 13px;
     margin-bottom: 5px;
     font-size: 20px
 }
-.petSpecies{
+
+.petSpecies {
     font-size: 12px;
     color: var(--blue-namedog);
 }
-.btnSmallSuccess{
+
+.btnSmallSuccess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 23px;
+    width: 73px;
+    position: absolute;
+    right: 30px;
+    bottom: 9px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.exclamation {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.pet .btnSmallAlert {
+    cursor: not-allowed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,22 +119,7 @@ main{
     font-size: 13px;
 }
 
-.pet .btnSmallAlert{
-    cursor: not-allowed;    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    height: 23px;
-    width: 73px;
-    position: absolute;
-    right: 30px;
-    bottom: 9px;
-    font-size: 13px;
-}
-
-.btnDelete{
+.btnDelete {
     position: absolute;
     height: fit-content;
     width: fit-content;
@@ -118,93 +127,8 @@ main{
     bottom: 11px;
 }
 
-.btnDelete:hover{
+.btnDelete:hover {
     padding-bottom: 2px;
-}
-
-
-.modalContainer {
-    background-color: rgba(70, 35, 167, 0.356);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    z-index: 18;
-    overflow: auto;
-}
-
-.modalBox {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: var(--white);
-    width: 400px;
-    gap: 13px;
-    border-radius: 8px;
-    justify-content: center;
-}
-
-.modalBox span{
-    background-color: var(--blue);
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;    
-    border-radius: 7px 7px 0 0;
-}
-
-.modalClose {
-    color: var(--white);
-    padding-right: 7px;
-}
-
-.modalBox h2{
-    text-justify: distribute-all-lines;
-    padding: 0 33px;
-    font-size: 20px;
-    color: var(--black);
-}
-
-.modalBox p{
-    font-size: 15px;
-    color: var(--red);
-    padding: 0 33px;
-}
-
-.modalBox div{
-    display: flex;
-    justify-content: space-between;
-    gap: 13px;
-    align-items: center;
-}
-.modalBox div h2{
-    padding-right: 0;
-}
-
-.modalBox aside{
-    padding-right: 33px;
-}
-
-.adoteImg{
-    border-radius: 7px;
-}
-
-.btnSmallAlert{
-    margin: 13px;
-}
-
-.modalBox .btnSmallSuccess{
-    position: relative;
-    top: 0;
-    left: 215px;
-    width: 40%;
-    height: 30px;
-    justify-self: center;
-    margin-bottom: 10px;
 }
 
 footer {
@@ -224,4 +148,53 @@ footer {
     align-items: center;
     color: var(--blue-placeh);
     font-size: var(--size2);
+}
+
+
+@media (min-width: 840px) {
+
+    .petCard {
+        height: 130px;
+        width: 260px;
+        gap: 13px;
+    }
+
+    img {
+        min-height: 130px;
+        min-width: 130px;
+    }
+
+    .petCard span {
+        height: 100px;
+        border-radius: 4px;
+    }
+
+    .petName {
+        margin-bottom: 13px;
+        font-size: 21px
+    }
+
+    .petSpecies {
+        font-size: 13px;
+    }
+
+    .btnSmallSuccess {
+        right: 39px;
+        bottom: 13px;
+    }
+
+    .pet .btnSmallAlert {
+        right: 39px;
+        bottom: 13px;
+        font-size: 13px;
+    }
+
+    .btnDelete {
+        right: 13px;
+        bottom: 15px;
+    }
+
+    .btnDelete:hover {
+        padding-bottom: 2px;
+    }
 }

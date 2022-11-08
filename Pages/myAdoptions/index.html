@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kenzie Adopt</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../../styles/globalStyles.css" />
-    <link rel="stylesheet" href="../../styles/header.css" />
-    <link rel="stylesheet" href="../../styles/buttons.css" />
-    <link rel="stylesheet" href="../../styles/toast.css" />
-    <link rel="stylesheet" href="../../styles/spinner.css" />
-    <script
-      src="https://kit.fontawesome.com/36c8b92452.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header id="navHeader">
-        <div class="container" id="headerSpacing">
-            <div id="headerLogo">
-                <i class="fa-solid fa-paw"></i>
-                <h2>KenziePets</h2>
-              </div>
-              <div id="headerBtns">
-                <a class="btnSmallLink">Home</a>
-                <a class="btnSmallBrand" id="btnLogout">Logout</a>
-              </div>
-        </div>
-      
-    </header>
-    <section class="perfilHeader">
-      <img
-        src="https://criticalhits.com.br/wp-content/uploads/2021/07/gohan-e1560287514879-768x401.jpg"
-        class="avatarProfile"
-      />
-    </section>
-    <section class="userSection">
-      <div class="userDataContainer">
-        <h3>Dados Pessoais</h3>
-        <div>
-          <p><span class="txtBlue">Nome:</span> Gohan</p>
-          <p><span class="txtBlue">E-mail:</span> gohan@mail.com</p>
-        </div>
-        <div class="dataButtons">
-          <button class="btnSmallBrand">Atualizar informações</button>
-          <button class="btnSmallAlert">Deletar conta</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenzie Adopt</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../../styles/globalStyles.css" />
+  <link rel="stylesheet" href="../../styles/header.css" />
+  <link rel="stylesheet" href="../../styles/buttons.css" />
+  <link rel="stylesheet" href="../../styles/toast.css" />
+  <link rel="stylesheet" href="../../styles/spinner.css" />
+  <script src="https://kit.fontawesome.com/36c8b92452.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <span class="container" id='navHeader'>
+      <div id="headerLogo">
+        <i class="fa-solid fa-paw"></i>
+        <h2>KenziePets</h2>
       </div>
-    </section>
-    <section class="container petsSection">
-      <button class="btnSmallSuccess">Cadastrar novo pet</button>
-      <ul class="petList">
-       <!-- Renderiza cards dos cachorros -->
-      </ul>
-    </section>
-    <footer class="container">
-        <p id="pFooter">
-            KenziePets | Todos os Direitos Reservados
-        </p>
-    </footer>
-    <script type="module" src="./script.js"></script>
-  </body>
+      <div id="headerBtns">
+        <a class="btnSmallLink" href="../home/index.html">Home</a>
+        <a class="btnSmallBrand" id="btnLogout">Logout</a>
+      </div>
+    </span>
+  </header>
+  <section class="perfilHeader">
+    <img src="https://criticalhits.com.br/wp-content/uploads/2021/07/gohan-e1560287514879-768x401.jpg"
+      class="avatarProfile" />
+  </section>
+  <section class="userSection">
+    <div class="userDataContainer">
+      <h3>Dados Pessoais</h3>
+      <div>
+        <p><span class="txtBlue">Nome:</span> Gohan</p>
+        <p><span class="txtBlue">E-mail:</span> gohan@mail.com</p>
+      </div>
+      <div class="dataButtons">
+        <button class="btnSmallBrand">Atualizar informações</button>
+        <button class="btnSmallAlert">Deletar conta</button>
+      </div>
+    </div>
+  </section>
+  <section class="container petsSection">
+    <button class="btnSmallSuccess">Cadastrar novo pet</button>
+    <ul class="petList">
+      <!-- Renderiza cards dos cachorros -->
+    </ul>
+  </section>
+  <footer class="container">
+    <p id="pFooter">
+      KenziePets | Todos os Direitos Reservados
+    </p>
+  </footer>
+  <script type="module" src="./script.js"></script>
+</body>
+
 </html>

@@ -1,10 +1,11 @@
-#h1Logo{
+#h1Logo {
     color: var(--white);
 }
 
-#h1Page{
+#h1Page {
     color: var(--blue);
 }
+
 #loginPage {
     width: 100%;
     /* height: 100vh; */
@@ -13,33 +14,33 @@
 
 }
 
-#backPage{
+#backPage {
     color: var(--white);
     font-size: var(--size5);
     margin-right: 30px;
 }
 
-#backPageNone{
+#backPageNone {
     display: none;
 }
 
 @media (min-width: 840px) {
-    #backPageNone{
+    #backPageNone {
         display: flex;
-        color:var(--white)
+        color: var(--white)
     }
 
-    #divbackPage{
+    #divbackPage {
         position: fixed;
         left: 0;
-        top:0;
+        top: 0;
         display: flex;
         padding: 20px;
         align-items: center;
     }
 }
 
-#logo{
+#logo {
     display: flex;
 }
 
@@ -88,7 +89,6 @@ form input {
     border: 1px solid var(--blue-placeh);
     border-radius: 4px;
     color: var(--blue-placeh)
-
 }
 
 input::placeholder {

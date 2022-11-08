@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenzie Adopt</title>
+  <title>Kenzie Adopt - Register</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="../../styles/globalStyles.css">  
+  <link rel="stylesheet" href="../../styles/globalStyles.css">
   <link rel="stylesheet" href="../../styles/buttons.css">
   <link rel="stylesheet" href="../../styles/toast.css">
   <link rel="stylesheet" href="../../styles/spinner.css">
@@ -15,19 +15,13 @@
 </head>
 
 <body>
-  <header class="container">
-    <span id="logo">
-      <a id="msg-back" href="../Home/index.html">
-        <i class="fa-solid fa-chevron-left"></i>
-        <span id="msg-desktop">Voltar para a página inicial</span>
-      </a>
-    </span>
+  <header>
     <div id="divLogo">
       <h1 id="h1Logo"><i class="fa-solid fa-paw"></i> KenziePets</h1>
-    </div>               
+    </div>
   </header>
-  
-  <main class="container"  id="regPage">
+
+  <main id="regPage">
     <div id="divReg">
       <h1 id="h1Page">Register</h1>
       <form id="register">
@@ -35,7 +29,7 @@
         <input name="email" type="email" id="email" placeholder="E-mail" />
         <input name="password" type="password" id="password" placeholder="Senha" />
         <input name="avatar_url" type="text" id="avatar" placeholder="Avatar">
-        <button type="submit" id="btnLoginPage">Cadastrar</button>
+        <button class="btnBrand" type="submit" id="btnRegisterPage">Cadastrar</button>
       </form>
       <p id="go-login">Já possui cadastro? <a href="../Login/index.html">Clique aqui</a> para logar.
       </p>

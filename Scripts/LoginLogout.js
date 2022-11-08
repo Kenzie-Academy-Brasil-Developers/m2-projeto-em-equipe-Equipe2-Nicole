@@ -1,7 +1,8 @@
+import { toast } from "./toast.js"
+
 export const verifyLogin = () => {
     const user = localStorage.getItem('TokenLogin') || ""
-    console.log(user);
-    if (user == "" || user == null|| user == 'undefined') {
+    if (user == "" || user == null || user == 'undefined') {
         window.location.replace("../login/index.html");
     }
 };
@@ -10,9 +11,10 @@ export const logout = () => {
     const btnLogout = document.getElementById('btnLogout')
     btnLogout.addEventListener('click', () => {
         localStorage.removeItem('TokenLogin')
+        toast("Você está saindo", "Aguardamos sua visita")
         setTimeout(() => {
             window.location.replace("../login/index.html");
-        }, 3300);
+        }, 2300);
     })
 }
 

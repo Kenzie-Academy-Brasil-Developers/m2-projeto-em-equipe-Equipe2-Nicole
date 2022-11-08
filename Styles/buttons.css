@@ -3,38 +3,37 @@
     background: var(--blue);
     font-size: 16px;
     border-radius: 4px;
-    border: none;
-    outline: 1px solid var(--blue);
+    border: 1px solid var(--blue);
     padding: 14px 10px;
     width: 100%;
     color: var(--white);
     font-weight: bold;
 }
 
-
 .btnBrand:hover {
     background: var(--blue-dark);
     border: 1px solid var(--blue-dark);
-  }
+}
 
 .btnSmallBrand {
     cursor: pointer;
     background: var(--blue);
     border-radius: 4px;
     font-size: 16px;
-    border: 1px solid var(--blue);;
+    border: 1px solid var(--blue);
+    ;
     outline: none;
     padding: 8px 12px;
     color: var(--white);
     font-weight: bold;
-  }
+}
 
-  .btnSmallBrand:hover {
+.btnSmallBrand:hover {
     background: var(--blue-dark);
     border: 1px solid var(--blue-dark);
-  }
-  
-  .btnSmallAlert {
+}
+
+.btnSmallAlert {
     cursor: pointer;
     background: var(--white);
     border-radius: 4px;
@@ -44,16 +43,15 @@
     padding: 8px 12px;
     color: var(--red);
     font-weight: bold;
-  
-  }
+}
 
-  .btnSmallAlert:hover {
+.btnSmallAlert:hover {
     background: var(--red);
     border: 1px solid var(--red);
     color: var(--white);
-  }
+}
 
-  .btnSmallSuccess {
+.btnSmallSuccess {
     cursor: pointer;
     background: var(--green);
     border-radius: 4px;
@@ -63,16 +61,14 @@
     padding: 8px 12px;
     color: var(--white);
     font-weight: bold;
-  
-  }
+}
 
-  .btnSmallSuccess:hover {
+.btnSmallSuccess:hover {
     background: var(--green-dark);
     border: 1px solid var(--green-dark);
-  
-  }
+}
 
-  .btnSmallLink {
+.btnSmallLink {
     cursor: pointer;
     background: var(--white);
     border-radius: 4px;
@@ -82,9 +78,8 @@
     padding: 8px 12px;
     color: var(--blue);
     font-weight: bold;
-  
-  }
+}
 
-  .btnSmallLink:hover {
+.btnSmallLink:hover {
     text-decoration: underline;
-  }
+}

@@ -1,4 +1,8 @@
 import { getAllPets } from "../../scripts/api.js"
+import { verifyLogin, logout, lockScroll, unlockScroll } from '../../scripts/LoginLogout.js'
+
+verifyLogin()
+logout()
 
 {
   /* 

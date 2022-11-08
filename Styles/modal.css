@@ -1,0 +1,102 @@
+
+
+.modalContainer {
+    background-color: rgba(70, 35, 167, 0.356);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 18;
+    overflow: auto;
+}
+
+.modalBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--white);
+    width: 400px;
+    gap: 13px;
+    border-radius: 8px;
+    justify-content: center;
+    animation: modal 1300ms;
+}
+
+.modalBox span {
+    background-color: var(--blue);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 7px 7px 0 0;
+}
+
+.modalClose {
+    color: var(--white);
+    padding-right: 7px;
+}
+
+.modalBox h2 {
+    text-justify: distribute-all-lines;
+    padding: 0 33px;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.modalBox p {
+    font-size: 15px;
+    color: var(--red);
+    padding: 0 33px;
+}
+
+.modalBox div {
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+    align-items: center;
+}
+
+.modalBox div h2 {
+    padding-right: 0;
+}
+
+.modalBox aside {
+    padding-right: 33px;
+}
+
+.adoteImg {
+    border-radius: 7px;
+}
+
+.btnSmallAlert {
+    margin: 13px;
+}
+
+.modalBox .btnSmallSuccess {
+    position: relative;
+    top: 0;
+    left: 215px;
+    width: 40%;
+    height: 30px;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+@keyframes modal {
+    0% {
+        transform: translate(-70%, 0%);
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -97,7 +97,7 @@
   font-size: var(--size2);
 }
 
-@media (min-width: 840px) { 
+@media (min-width: 840px) {
   .avatarProfile {
     top: 120px;
     width: 320px;
@@ -132,7 +132,7 @@
   }
 }
 
-@media (min-width: 1050px) { 
+@media (min-width: 1050px) {
   .petList li {
     width: 500px;
     max-width: 45%;

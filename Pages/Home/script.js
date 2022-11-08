@@ -1,5 +1,5 @@
-import {getAllPets, deletePet, adotePet} from '../../scripts/api.js'
-import {verifyLogin, logout, lockScroll, unlockScroll} from '../../scripts/LoginLogout.js'
+import { getAllPets, deletePet, adotePet } from '../../scripts/api.js'
+import { verifyLogin, logout, lockScroll, unlockScroll } from '../../scripts/LoginLogout.js'
 
 verifyLogin()
 logout()
@@ -9,11 +9,11 @@ const main = document.querySelector('main')
 let allPetsList = await getAllPets()
 let avaliablePets = allPetsList.filter(pet => (pet.available_for_adoption))
 
-const trackBttns = () =>{
+const trackBttns = () => {
     let btns = [...petList.getElementsByTagName('a')]
 
     btns.map(bttn => {
-        bttn.addEventListener('click', ()=>{
+        bttn.addEventListener('click', () => {
             if (bttn.id[0] == 'd') {
                 deletePetModal(bttn.id.slice(7))
             } else if (bttn.id[0] == 'a') {
@@ -40,9 +40,9 @@ function renderAllPets(list) {
         let lastPetbtn = document.getElementById(`delete-${pet.id}`)
         if (pet.available_for_adoption) {
             lastPetbtn.insertAdjacentHTML('beforebegin', `
-                <a class="btnSmallSuccess" id="adote-${pet.id}">Me adote!</a>
+                <a class="btnSmallSuccess" id="adote-${pet.id}">Me adote<b class='exclamation'>!</b></a>
             `)
-        }else{
+        } else {
             lastPetbtn.insertAdjacentHTML('beforebegin', `
                 <a class="btnSmallAlert" disabled>Adotado!</a>
             `)
@@ -56,14 +56,14 @@ renderAllPets(allPetsList)
 const allFilter = document.getElementById('allBtn')
 const avaliableFilter = document.getElementById('avaliableBtn')
 
-allFilter.addEventListener('click', ()=>{
+allFilter.addEventListener('click', () => {
     avaliableFilter.classList.remove('selected')
     allFilter.classList.remove('selected')
     allFilter.classList.add('selected')
     renderAllPets(allPetsList)
 })
 
-avaliableFilter.addEventListener('click', ()=>{
+avaliableFilter.addEventListener('click', () => {
     allFilter.classList.remove('selected')
     avaliableFilter.classList.remove('selected')
     avaliableFilter.classList.add('selected')
@@ -98,6 +98,7 @@ const deletePetModal = async (id) => {
     deletePetBtn.addEventListener('click', async () => {
         await deletePet(id)
         allPetsList = await getAllPets()
+        avaliablePets = allPetsList.filter(pet => (pet.available_for_adoption))
         deletePetModal.remove()
         unlockScroll()
         avaliableFilter.classList.remove('selected')
@@ -136,9 +137,10 @@ const adotePetModal = async (id) => {
     })
 
     adotePetBtn.addEventListener('click', async () => {
-        let body = {"pet_id": id}
+        let body = { "pet_id": id }
         await adotePet(body)
         allPetsList = await getAllPets()
+        avaliablePets = allPetsList.filter(pet => (pet.available_for_adoption))
         adotePetModal.remove()
         unlockScroll()
         avaliableFilter.classList.remove('selected')
