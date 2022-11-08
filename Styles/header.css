@@ -4,18 +4,12 @@
 }
 
 #navHeader{
-    position: fixed;
-    top: 0;
-    width: 100%;
     display: flex;
     height: fit-content;    
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: var(--white);
-    border-bottom: 1px solid var(--grey-light);
-    z-index: 1;
 }
 
 #headerLogo{

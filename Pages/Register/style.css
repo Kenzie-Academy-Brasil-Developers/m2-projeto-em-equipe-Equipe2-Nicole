@@ -92,10 +92,38 @@ footer {
     color: var(--blue);
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8bd97ea38b21105c0cef5179037097baedbcbb4e
 @media (min-width: 840px) {
+    #msg-desktop {
+        display: flex;
+    }
+
+    header {
+        height: 458px;
+        max-width: 100%;
+        min-width: 390px;
+        background: var(--blue);
+    }
+
+    #logo {
+        align-items: baseline;
+    }
+<<<<<<< HEAD
+=======
+@media (min-width: 840px) {    
+    #divLogo {
+        height: 50vh;
+    }   
+>>>>>>> 3d3f57b4316d80e4fc2f7e66fef2b09d9caa3bcd
+=======
+
     #divLogo {
         height: 50vh;
     }
+>>>>>>> 8bd97ea38b21105c0cef5179037097baedbcbb4e
 
     #divReg {
         position: fixed;

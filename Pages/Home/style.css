@@ -6,14 +6,13 @@ header {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.imgCards {
+img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
 }
 
-.btnView {
-    color: var(--blue);
+.btnDelete {
+    color: var(--red);
     height: 50px;
     width: 50px;
 }
@@ -26,9 +25,8 @@ main {
 }
 
 #homeFilter {
-    margin-top: 130px;
     gap: 30px;
-    padding: 7px;
+    padding: 7px 5vw;
     margin-bottom: 40px;
     background-color: var(--blue);
     color: var(--white);
@@ -43,28 +41,26 @@ main {
 
 #petList {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
     max-width: 90vw;
-    padding-bottom: 40px;
 }
 
 .petCard {
     position: relative;
-    width: 220px;
-    box-shadow: 0px 0px 7px rgba(78, 32, 150, 0.25);
+    box-shadow: 0px 0px 5px rgba(78, 32, 150, 0.25);
     border-radius: 4px;
     display: flex;
     gap: 13px;
 }
 
-.petCard .imgCardBox {
+.petCard span {
     height: 100px;
     border-radius: 4px;
 }
 
-.imgCards {
+.petCard span img {
     height: 100px;
     border-radius: 4px;
 }
@@ -79,32 +75,33 @@ main {
 
 .petName {
     margin-top: 13px;
-    padding-bottom: 20px;
-    font-size: 20px;
-    max-width: 7ch;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    margin-bottom: 5px;
+    font-size: 20px
 }
 
 .petSpecies {
-    margin-top: -13px;
     font-size: 12px;
     color: var(--blue-namedog);
 }
 
+.btnSmallSuccess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 23px;
+    width: 73px;
+    position: absolute;
+    right: 30px;
+    bottom: 9px;
+    font-size: 13px;
+    font-weight: 500;
+}
 
 .exclamation {
     font-weight: 500;
     font-size: 15px;
-}
-
-.cardBtns {
-    width: 100%;
-    display: flex;
-    gap: 13px;
-    align-items: center;
-    margin-top: 10px;
 }
 
 .pet .btnSmallAlert {
@@ -116,28 +113,21 @@ main {
     margin: 0;
     height: 23px;
     width: 73px;
+    position: absolute;
+    right: 30px;
+    bottom: 9px;
     font-size: 13px;
 }
 
-.btnAdote {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    height: 27px;
-    width: 73px;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.btnView {
+.btnDelete {
+    position: absolute;
     height: fit-content;
     width: fit-content;
+    right: 7px;
+    bottom: 11px;
 }
 
-.btnView:hover {
-    color: var(--blue-placeh);
+.btnDelete:hover {
     padding-bottom: 2px;
 }
 
@@ -149,11 +139,6 @@ footer {
     height: 40px;
     width: 100vw;
     align-items: center;
-    bottom: 0;
-    left: 0;
-    height: 40px;
-    position: fixed;
-    width: 100%;
 }
 
 #pFooter {
@@ -168,17 +153,13 @@ footer {
 
 @media (min-width: 840px) {
 
-    .cardBtns {
-        margin-top: 25px;
-    }
-
     .petCard {
         height: 130px;
         width: 260px;
         gap: 13px;
     }
 
-    .imgCards {
+    img {
         min-height: 130px;
         min-width: 130px;
     }
@@ -189,8 +170,7 @@ footer {
     }
 
     .petName {
-        margin-bottom: 25px;
-        padding-bottom: 25px;
+        margin-bottom: 13px;
         font-size: 21px
     }
 
@@ -198,9 +178,14 @@ footer {
         font-size: 13px;
     }
 
-    .btnAdote {
-        right: 41px;
-        bottom: 8px;
+    .btnSmallSuccess {
+        right: 39px;
+        bottom: 13px;
+    }
+
+    .pet .btnSmallAlert {
+        right: 39px;
+        bottom: 13px;
         font-size: 13px;
     }
 
@@ -211,13 +196,5 @@ footer {
 
     .btnDelete:hover {
         padding-bottom: 2px;
-    }
-
-}
-
-
-@media (min-width: 563px) {
-    #homeFilter {
-        margin-top: 80px;
     }
 }
